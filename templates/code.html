@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <title>Encrypt</title>
+</head>
+<body>
+    <h1>Transforma el mensaje a codigo</h1>
+    <div class="code">
+        <input type="text" id="texto" placeholder=":o ingresa tu mensaje aqui o:">
+        <div class="boton">
+            <button type="button" id="codific">Encripta</button>
+        </div>
+    </div>
+
+    <ul id="lista_mensajes">
+        <li class="grupo_mensajes"></li>
+        <li class="separacion"></li>
+    </ul>
+
+    <py-env>
+        - numpy
+    </py-env>
+
+    <py-script src="/static/code.py"></py-script>
+</body>
+</html>
